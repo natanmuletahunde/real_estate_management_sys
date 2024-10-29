@@ -15,8 +15,8 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <!-- imported css -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500"> 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="{{asset('assets/https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500')}}"> 
+    <link rel="stylesheet" href="{{asset('assets/fonts/icomoon/style.css')}}">
 
     <link rel="stylesheet" href=" {{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href=" {{asset('assets/css/magnific-popup.css')}}">
@@ -38,7 +38,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <!-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -48,14 +48,14 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
+                     Left Side Of Navbar 
                     <ul class="navbar-nav me-auto">
 
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
+                     Right Side Of Navbar 
                     <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
+                         Authentication Links 
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -90,8 +90,36 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->  
+    <!-- #region --> 
 
+    <div class="col-4 col-md-4 col-lg-8">
+              <nav class="site-navigation text-right text-md-right" role="navigation">
+
+                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                <ul class="site-menu js-clone-nav d-none d-lg-block">
+                  <li class="active">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li><a href="buy.html">Buy</a></li>
+                  <li><a href="rent.html">Rent</a></li>
+                  <li class="has-children">
+                    <a href="properties.html">Properties</a>
+                    <ul class="dropdown arrow-top">
+                      <li><a href="#">Condo</a></li>
+                      <li><a href="#">Property Land</a></li>
+                      <li><a href="#">Commercial Building</a></li>
+                     
+                    </ul>
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+                </ul>
+              </nav>
+            </div>
         <main class="py-4">
             @yield('content')
         </main>
@@ -110,6 +138,6 @@
   <script src="{{asset('assets/js/bootstrap-datepicker.min.js')}}"></script>
   <script src="{{asset('assets/js/aos.js')}}"></script>
 
-  <script src=" {{asset('assets/js/main.js')}}"></script>
+  <script src=" {{asset('assets/js/main.js')}}></script>
 </body>
 </html>
