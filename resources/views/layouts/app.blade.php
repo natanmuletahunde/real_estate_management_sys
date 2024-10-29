@@ -21,13 +21,13 @@
     <link rel="stylesheet" href=" {{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href=" {{asset('css/magnific-popup.css')}}">
     <link rel="stylesheet" href=" {{asset('css/jquery-ui.css')}}">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/mediaelementplayer.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/fl-bigmug-line.css">
+    <link rel="stylesheet" href="  {{asset('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href=" {{asset('css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href=" {{asset('css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" href=" {{asset('css/mediaelementplayer.css')}}">
+    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
+    <link rel="stylesheet" href=" {{asset('css/fl-bigmug-line.css')}}">
     
   
     <link rel="stylesheet" href="css/aos.css">
